@@ -1,0 +1,95 @@
+.container {
+    min-height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-family: "Roboto", sans-serif;
+}
+
+
+li {
+    list-style: none;
+}
+
+.container-status {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 30rem;
+    height: 18rem;
+    background-color: #F0F3FA;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    box-shadow: 5px 5px 5px 0px rgba(0, 0, 0, 0.3);
+    border-radius: 10px;
+}
+
+.upload-status {
+    text-align: center;
+    margin-top: 6rem;
+}
+
+input {
+    outline: none;
+    padding: 0.5rem;
+    width: 20rem;
+    border: 1px solid #ffffff;
+    border-top-style: hidden;
+    border-right-style: hidden;
+    border-left-style: hidden;
+    border-bottom-style: groove;
+    background-color: #E4E6EB;
+    border-radius: 10px;
+    margin-top: 1rem;
+    margin-left: 1rem;
+}
+
+
+.button-origin {
+    width: 20rem;
+    border-radius: 10px;
+    border: 1px solid white;
+    height: 2.5rem;
+    background-color: #3A3B3C;
+    color: #E4E6EB;
+    margin-top: 2rem;
+}
+
+.map {
+    margin-top: 4rem;
+    width: 30rem;
+    height: 18rem;
+    background-color: silver;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-bottom: 5rem;
+    border-radius: 10px;
+}
+
+.array-status {
+    text-align: center;
+}
+
+.array-status p {
+    width: 25rem;
+    height: 5rem;
+    background-color: #ffffff;
+    margin-top: 12px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 10px;
+    font-size: 11px;
+}
+
+.map button {
+    width: 8rem;
+    margin-top: 1rem;
+    padding: 1rem;
+    border-radius: 10px;
+    border: 1px solid transparent;
+    background-color: #3A3B3C;
+    color: #ffffff;
+}

@@ -1,0 +1,64 @@
+.container {
+    min-height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-family: "Roboto", sans-serif;
+}
+.search-status{
+    margin-top: 8rem;
+}
+.search-status input {
+    outline: none;
+    border: 1px;
+    border-radius: 10px;
+    width: 25rem;
+    height: 1.2rem;
+    padding: 10px;
+    padding-left: 15px;
+    border-top-style: hidden;
+    border-right-style: hidden;
+    border-left-style: hidden;
+    border-bottom-style: groove;
+    background-color: #E4E6EB;
+}
+
+button {
+    width: 7rem;
+    border-radius:  3px 10px 10px 3px;
+    margin-left: -2rem;
+    border: 1px solid white;
+    height: 2.7rem;
+    background-color: #3A3B3C;
+    color: #E4E6EB;
+    margin-top: 0.5rem;
+}
+
+.get-status{
+    text-align: center;
+}
+
+.get-api{
+    margin-top: 2rem;
+    width: 32rem;
+    height: 15rem;
+    background: #C0C0C0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 10px;
+    margin-bottom: 5rem;
+}
+
+
+.forcus p {
+    width: 25rem;
+    height: 5rem;
+    background-color: #ffffff;
+    margin-top: 12px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 10px;
+    font-size: 11px;
+}

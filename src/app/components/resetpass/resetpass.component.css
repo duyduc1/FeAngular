@@ -1,0 +1,29 @@
+.container{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 92vh;
+    font-family: "Roboto", sans-serif;
+}
+
+input{
+    outline: none;
+    width: 15rem;
+    border-radius: 10px;
+    border: 1px solid rgb(244, 239, 239);
+    padding: 12px;
+    border-top-style: groove;
+    border-right-style: groove;
+    border-left-style: groove;
+    border-bottom-style: groove;
+}
+
+button{
+    width: 7rem;
+    height: 2.7rem;
+    margin-left: -3rem;
+    background-color: black;
+    border: 1px solid white;
+    color: white;
+    border-radius:  3px 10px 10px 3px;
+}

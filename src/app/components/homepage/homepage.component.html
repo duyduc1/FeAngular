@@ -1,0 +1,17 @@
+<div class="container">
+    <div class="all-status">
+        <div class="search-status">
+            <h1 style="text-align: center;"> Tất cả bài viết</h1>
+            <input type="text" [(ngModel)]="searchTerm" placeholder="Nhập chuyên đề" (keyup.enter)="handleSearch()">
+            <button (click)="handleSearch()">Tìm kiếm</button>
+        </div>
+        <div class="get-status">
+            <div class="get-api" *ngFor="let content of filteredContent.length ? filteredContent : contentList">
+                <div class="forcus">
+                    <p style="font-size: 15px;">Chuyên đề: {{ content.categories }}</p>
+                    <p>Nội dung: {{ content.content }}</p>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>

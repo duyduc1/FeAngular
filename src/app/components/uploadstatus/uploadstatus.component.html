@@ -1,0 +1,40 @@
+<div class="container">
+  <div class="body-status">
+    <div class="container-status">
+      <div class="upload-status">
+        <div>
+          <h1>Bài viết của tôi</h1>
+          <label>Chuyên đề</label>
+          <input type="text" [(ngModel)]="categories" placeholder="Bạn Đang Nghĩ Gì." />
+        </div>
+        <div>
+          <label>Nội dung</label>
+          <input type="text" [(ngModel)]="content" placeholder="Nội Dung." />
+        </div>
+        <button class="button-origin" (click)="handlePostStatus()">
+          {{ updateStatusId ? 'Cập nhật bài viết' : 'Đăng Bài' }}
+        </button>
+      </div>
+    </div>
+
+    <div>
+      <ng-template #statusList>
+        <ul class="li_form">
+          <li *ngFor="let status of statuses">
+            <div class="map">
+              <div class="array-status">
+                <p style="font-size: 15px;">Chuyên Đề : {{ status.categories }}</p>
+                <p>Nội Dung : {{ status.content }}</p>
+                <button (click)="handleUpdateStatus(status._id)">Chỉnh Sửa</button>
+                <button style="margin-left: 12px;" (click)="handleDeleteStatus(status._id)">Xóa</button>
+              </div>
+            </div>
+          </li>
+        </ul>
+      </ng-template>
+      <div style="margin-top: 2rem; text-align: center;" *ngIf="error; else statusList">
+        <p>{{ error }}</p>
+      </div>
+    </div>
+  </div>
+</div>

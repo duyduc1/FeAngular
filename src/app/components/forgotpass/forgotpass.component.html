@@ -1,0 +1,10 @@
+<div class="container">
+    <form #forgotPasswordForm="ngForm" (ngSubmit)="onSubmit()">
+        <h2 style="text-align: center;">Đổi mật khẩu</h2>
+        <p style="text-align: center;">Vui lòng điền Email để gửi yêu cầu đổi mật khẩu</p>
+        <label for="email">Email : </label>
+        <input type="email" id="email" name="email" [(ngModel)]="forgotpassObj.email" required  placeholder="Vui lòng nhập Email" />
+        <button type="submit">Gửi yêu cầu</button>
+        <p style="text-align: center; margin-top: 3rem;">{{ message }}</p>
+    </form>
+</div>

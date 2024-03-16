@@ -1,0 +1,24 @@
+<div class="profile">
+    <div *ngIf="error; else userData">
+        <p>{{ error }}</p>
+    </div>
+    <div class="body_user">
+        <ng-template #userData>
+            <div class="user_detail">
+                <div class="infor" *ngIf="user; else loading">
+                    <div class="margin" >
+                        <h1>Trang Cá Nhân</h1>
+                        <p class="detail_1">Tên người dùng: {{ user.username }}</p>
+                        <p class="detail_2">Email: {{ user.email }}</p>
+                        <p class="detail_1">Số điện thoại: {{ user.numberphone }}</p>
+                        <p class="detail_2">Ngày khởi tạo tài khoản: {{ user.createdAt }}</p>
+                        <p class="detail_1">Ngày cập nhật tài khoản: {{ user.updatedAt }}</p>
+                    </div>
+                </div>
+                <ng-template #loading>
+                    <p>Loading...</p>
+                </ng-template>
+            </div>
+        </ng-template>
+    </div>
+</div>
